@@ -3,15 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <title>Khoa Ha – IT 4403</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      color: #1e3c72;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #2a5298;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #2a5298;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #1e3c72;
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 12px 0;
+    }
+
+    ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2a5298;
+      color: white;
+      border-radius: 6px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    ul li a:hover {
+      background: #1e3c72;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <header>
+  <div class="container">
     <h1>Khoa Ha</h1>
-    <p>Affiliation: IT Student, CCSE</p>
-  </header>
+    <p><strong>Affiliation:</strong> IT Student, CCSE</p>
 
-  <section>
     <p>
       This website hosts labs and projects for IT 4403 – Advanced Web and Mobile Applications.
     </p>
@@ -25,15 +108,13 @@
         CCSE Department of IT Website
       </a>
     </p>
-  </section>
 
-  <section>
     <h2>Course Work</h2>
     <ul>
       <li><a href="labs.html">Labs</a></li>
       <li><a href="projects.html">Projects</a></li>
     </ul>
-  </section>
+  </div>
 
 </body>
 </html>
